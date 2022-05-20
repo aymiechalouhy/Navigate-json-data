@@ -10,14 +10,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-      primarySwatch: Colors.blue,
+        primarySwatch: Colors.blue,
       ),
       home: const JsonSubCategories(),
       debugShowCheckedModeBanner: false,
-         routes: {
+      routes: {
         JsonSubCategories.routeName: (context) => const JsonSubCategories(),
-        SubCategoriesDetailScreen.routeName: (context) => const SubCategoriesDetailScreen()
+        SubCategoriesDetailScreen.routeName: (context) =>const SubCategoriesDetailScreen()
       },
     );
   }
 }
+      

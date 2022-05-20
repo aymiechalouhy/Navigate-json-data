@@ -17,24 +17,26 @@ class _SubCategoriesDetailScreenState extends State<SubCategoriesDetailScreen> {
   SubCategories? subcategories;
 
   @override
+  //btetnaffaz awwal shi bel stateful widget, bedna yeha tetnaffaz abel build
   void initState() {
     super.initState();
   }
 
   @override
+  //Called when a dependency of this State object changes.
   void didChangeDependencies() {
-    var subcategoryString = ModalRoute.of(context)?.settings.arguments as String;
+    var subcategoryString =
+        ModalRoute.of(context)?.settings.arguments as String;
     debugPrint('page 2');
     debugPrint(subcategoryString);
 
     var subcategoryJson = jsonDecode(subcategoryString);
-    debugPrint(subcategoryJson);
+    debugPrint(subcategoryJson.toString());
 
     setState(() {
       subcategories = SubCategories.fromJson(subcategoryJson);
       subcatName = subcategories!.name;
     });
-
     super.didChangeDependencies();
   }
 

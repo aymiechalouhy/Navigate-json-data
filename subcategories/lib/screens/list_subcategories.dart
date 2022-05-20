@@ -14,21 +14,17 @@ class JsonSubCategories extends StatefulWidget {
 }
 
 class _JsonSubCategoriesState extends State<JsonSubCategories> {
-  List<SubCategories> subcategories = [];
-
-  void navigate() {
-    readJsonFile();
-  }
+  List<SubCategories> mainCategories = [];
 
   Future<void> readJsonFile() async {
     final String response =
-    await rootBundle.loadString('assets/subcategories.json');
+        await rootBundle.loadString('assets/subcategories.json');
     final subCat = await json.decode(response);
     debugPrint(subCat.toString());
     var list = subCat["items"] as List<dynamic>;
 
     setState(() {
-      subcategories = list.map((e) => SubCategories.fromJson(e)).toList();
+      mainCategories = list.map((e) => SubCategories.fromJson(e)).where((e)=>  e.parentCategoryId?.isEmpty ?? true).toList();
     });
   }
 
@@ -43,25 +39,26 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: ElevatedButton(
-                onPressed: navigate, child: const Text("Load SubCategories")),
+                onPressed: readJsonFile,
+                child: const Text("Load SubCategories")),
           ), //  if (subcategories.isNotEmpty)
-          if (subcategories.isNotEmpty)
+          if (mainCategories.isNotEmpty)
             Expanded(
               child: ListView.builder(
-                itemCount: subcategories.length,
+                itemCount: mainCategories.length,
                 itemBuilder: (BuildContext context, index) {
                   return Card(
                       margin: const EdgeInsets.all(15.0),
-                      color: Colors.greenAccent,
+                      color: const Color.fromARGB(255, 138, 192, 218),
                       child: ListTile(
                         title: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text(subcategories[index].name),
+                          child: Text(mainCategories[index].name),
                         ),
                         subtitle: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text(
-                            subcategories[index].id.toString(),
+                            mainCategories[index].logo.toString(),
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
@@ -69,7 +66,7 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
                           // print(jsonEncode(products[index]));
                           Navigator.of(context).pushNamed(
                               SubCategoriesDetailScreen.routeName,
-                              arguments: jsonEncode(subcategories[index]));
+                              arguments: jsonEncode(mainCategories[index]));
                         },
                       ));
                 },
