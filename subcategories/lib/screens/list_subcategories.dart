@@ -14,7 +14,6 @@ class JsonSubCategories extends StatefulWidget {
 }
 
 class _JsonSubCategoriesState extends State<JsonSubCategories> {
- 
   List<SubCategories> _mainCategories = [];
   Future<void> readJsonFile() async {
     debugPrint("!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>!Reading json file");
@@ -31,6 +30,7 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
           .toList();
     });
   }
+
   @override
   Widget build(BuildContext context) {
     if (_mainCategories.isEmpty) {
@@ -40,46 +40,67 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
       appBar: AppBar(
         title: const Text("load json file"),
       ),
-      body: Column(
-        children: [    
-          if (_mainCategories.isNotEmpty)
-            Expanded(
-              child: ListView.builder(
-                itemCount: _mainCategories.length,
-                itemBuilder: (BuildContext context, index) {
-                  return Card(
-                      margin: const EdgeInsets.all(15.0),
-                      color: const Color.fromARGB(255, 138, 192, 218),
-                      child: ListTile(
-                        title: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(_mainCategories[index].name), 
-                        ),
-                        subtitle: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Image.network(
-                            _mainCategories[index].logo.toString(),
-                            height: 100,
-                            width: 100,
-                               errorBuilder: (ctx, o, n) {
-                                  return
-                                  const Icon(Icons.error);
+      body:
+       SingleChildScrollView(
+         child: Column(
+          children: [
+            if (_mainCategories.isNotEmpty)
+              FutureBuilder(
+                builder: (context, snapshot) {
+                  return GridView.builder(
+                    physics:const ScrollPhysics(),
+                    shrinkWrap: true,
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,
+                        mainAxisSpacing: 20,
+                        crossAxisSpacing: 0),
+                    itemBuilder: (context, index) => Padding(
+                      padding: const EdgeInsets.only(top: 0),
+                      child: SingleChildScrollView(
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed(
+                                SubCategoriesDetailScreen.routeName,
+                                arguments: _mainCategories[index].id);
+                          },
+                          child: (Column(
+                            children: [
+                              Image.network(
+                                _mainCategories[index].logo.toString(),
+                                errorBuilder: (ctx, o, n) {
+                                  return Image.asset(
+                                    "assets/images/load.png",
+                                    height: 100,
+                                    width: 100,
+                                    errorBuilder: (ctx, o, n) {
+                                      return Image.asset("assets/load.png");
+                                    },
+                                  );
                                 },
-                          ),
+                                height: 100,
+                                width: 100,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 4),
+                                child: Text(
+                                  _mainCategories[index].name,
+                                  style: const TextStyle(
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          )),
                         ),
-                        onTap: () {
-                          Navigator.of(context).pushNamed(
-                              SubCategoriesDetailScreen.routeName,
-                              arguments: _mainCategories[index].id);
-                        },
-                      ));
+                      ),
+                    ),
+                    itemCount: _mainCategories.length,
+                  );
                 },
               ),
-            )
-          // else
-          //   const Text("No Subcategoriess"),
-        ],
-      ),
+          ],
+         ),
+       ),
     );
   }
 }
