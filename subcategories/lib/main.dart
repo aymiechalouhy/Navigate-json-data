@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:subcategories/models/listcategories.dart';
 import 'package:subcategories/screens/list_subcategories.dart';
 import 'package:subcategories/screens/details_subcategories.dart';
+import 'package:provider/provider.dart';
 void main() {
-  runApp(MyApp());
+  runApp(MyApp()
+    //  ChangeNotifierProvider(
+    //   create: (context) => AllCategories(subcategories: ),
+    //   child:  MyApp(),
+    // ),
+  );
+    // MyApp()
 }
 class MyApp extends StatelessWidget {
   @override
@@ -14,6 +22,8 @@ class MyApp extends StatelessWidget {
       ),
       home: const JsonSubCategories(),
       debugShowCheckedModeBanner: false,
+
+
       routes: {
         JsonSubCategories.routeName: (context) => const JsonSubCategories(),
         SubCategoriesDetailScreen.routeName: (context) =>const SubCategoriesDetailScreen()

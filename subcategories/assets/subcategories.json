@@ -10,6 +10,7 @@
         {
             "_id": "nDKGHPhbsuS2fABdw",
             "icon": "",
+            "logo": "",
             "name": "Diapers",
             "parentCategoryId": "JPb6BjzoZNMQh5uh4"
         },
@@ -23,24 +24,28 @@
         {
             "_id": "N4RQ5Bjws4LLeZDyL",
             "icon": "",
+            "logo": "",
             "name": "Baby World",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "gMnTXMbPQyJQKT7Ss",
             "icon": "",
+            "logo": "",
             "name": "Food",
             "parentCategoryId": "JPb6BjzoZNMQh5uh4"
         },
         {
             "_id": "S86B4hEppJonfQ9p9",
             "icon": "",
+            "logo": "",
             "name": "Toilerties",
             "parentCategoryId": "JPb6BjzoZNMQh5uh4"
         },
         {
             "_id": "aKHZTZmvvQgizdAKC",
             "icon": "",
+            "logo": "",
             "name": "Wipes",
             "parentCategoryId": "JPb6BjzoZNMQh5uh4"
         },
@@ -54,24 +59,28 @@
         {
             "_id": "3yFcPFaJr2SNupA6m",
             "icon": "",
+            "logo": "",
             "name": "Water",
             "parentCategoryId": "rRbZDMfc9wwPSRAEX"
         },
         {
             "_id": "8avg3jzERW5DSYrBf",
             "icon": "",
+            "logo": "",
             "name": "Juice",
             "parentCategoryId": "rRbZDMfc9wwPSRAEX"
         },
         {
             "_id": "SkcDe9wMsax5K2Tpk",
             "icon": "",
+            "logo": "",
             "name": "Cheese & Labne",
             "parentCategoryId": "ik2vcQYr2Ss8oBAf4"
         },
         {
             "_id": "AdpJJvDYineYcyXwT",
             "icon": "",
+            "logo": "",
             "name": "Milk",
             "parentCategoryId": "ik2vcQYr2Ss8oBAf4"
         },
@@ -85,12 +94,14 @@
         {
             "_id": "b58yJbdFAaXpYCWD6",
             "icon": "",
+            "logo": "",
             "name": "Spreads & Jam",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "2vEGLTnnRCt9SjroA",
             "icon": "",
+            "logo": "",
             "name": "Cereal",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
@@ -104,6 +115,7 @@
         {
             "_id": "v4bQrLuowB3z3xBKu",
             "icon": "",
+            "logo": "",
             "name": "Food Storage",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
@@ -117,18 +129,21 @@
         {
             "_id": "zLGh36aKJ2TXe33L5",
             "icon": "",
+            "logo": "",
             "name": "Chocolates & Biscuits",
             "parentCategoryId": "GzE5usW4fApu38pjA"
         },
         {
             "_id": "CntBToryfEFhDqig9",
             "icon": "",
+            "logo": "",
             "name": "Cereal Bars",
             "parentCategoryId": "GzE5usW4fApu38pjA"
         },
         {
             "_id": "h34itfkgMuZCcawxL",
             "icon": "",
+            "logo": "",
             "name": "Cakes & Pastries",
             "parentCategoryId": "GzE5usW4fApu38pjA"
         },
@@ -142,66 +157,77 @@
         {
             "_id": "WLfA2pNxSFjgXGgPy",
             "icon": "",
+            "logo": "",
             "name": "Bread",
             "parentCategoryId": "2CXpEMQgFJ6uZEPWa"
         },
         {
             "_id": "XgYfFuD53Fo7vLtke",
             "icon": "",
+            "logo": "",
             "name": "Bakery",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "zzuy6DSCBiwBziF5n",
             "icon": "",
+            "logo": "",
             "name": "Buns",
             "parentCategoryId": "2CXpEMQgFJ6uZEPWa"
         },
         {
             "_id": "PCCrqWsFFqFyhwv3Y",
             "icon": "",
+            "logo": "",
             "name": "Pastries",
             "parentCategoryId": "2CXpEMQgFJ6uZEPWa"
         },
         {
             "_id": "kbWepH8J4qGSvSgFW",
             "icon": "",
+            "logo": "",
             "name": "Sweets",
             "parentCategoryId": "2CXpEMQgFJ6uZEPWa"
         },
         {
             "_id": "ZWSiLgLQmkmH9mDYR",
             "icon": "",
+            "logo": "",
             "name": "Toast & Kaak",
             "parentCategoryId": "2CXpEMQgFJ6uZEPWa"
         },
         {
             "_id": "zx8MtvTD49eo3zYWe",
             "icon": "",
+            "logo": "",
             "name": "Chocolate & Cocoa",
             "parentCategoryId": "rRbZDMfc9wwPSRAEX"
         },
         {
             "_id": "giibHXYLyLznNF78c",
             "icon": "",
+            "logo": "",
             "name": "Coffee & Tea",
             "parentCategoryId": "rRbZDMfc9wwPSRAEX"
         },
         {
             "_id": "z3rCiD6iiStYnwAJL",
             "icon": "",
+            "logo": "",
             "name": "Beverages",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "yoHmCNkxXMqdEgdDW",
             "icon": "",
+            "logo": "",
             "name": "Energy Drinks",
             "parentCategoryId": "rRbZDMfc9wwPSRAEX"
         },
         {
             "_id": "ZcnDTZupMAb6WrwPX",
             "icon": "",
+            "logo": "",
             "name": "Instant Drinks",
             "parentCategoryId": "rRbZDMfc9wwPSRAEX"
         },
@@ -215,114 +241,133 @@
         {
             "_id": "jPbBaDdMZHHFJkiwg",
             "icon": "",
+            "logo": "",
             "name": "Beverages",
             "parentCategoryId": "zeHQ2bEMEvYrWvP6f"
         },
         {
             "_id": "zevHyLiEGm9u4dM7m",
             "icon": "",
+            "logo": "",
             "name": "Milk",
             "parentCategoryId": "rRbZDMfc9wwPSRAEX"
         },
         {
             "_id": "Tm624bZyjpsQPig6F",
             "icon": "",
+            "logo": "",
             "name": "Soft Drinks",
             "parentCategoryId": "rRbZDMfc9wwPSRAEX"
         },
         {
             "_id": "MLa7BHjxJeuv5HfT9",
             "icon": "",
+            "logo": "",
             "name": "Syrup",
             "parentCategoryId": "rRbZDMfc9wwPSRAEX"
         },
         {
             "_id": "QQZbJ6EmwuhrsKC5Y",
             "icon": "",
+            "logo": "",
             "name": "Water",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "6RJZSNCdwa7YqmRqn",
             "icon": "",
+            "logo": "",
             "name": "Butter & Marguerine",
             "parentCategoryId": "ik2vcQYr2Ss8oBAf4"
         },
         {
             "_id": "BQ5teCwQdK8CosygC",
             "icon": "",
+            "logo": "",
             "name": "Eggs",
             "parentCategoryId": "ik2vcQYr2Ss8oBAf4"
         },
         {
             "_id": "NWnzAqLuWBfRiJMa7",
             "icon": "",
+            "logo": "",
             "name": "Organic",
             "parentCategoryId": ""
         },
         {
             "_id": "WG9mDGoXLCHtQPfcF",
             "icon": "",
+            "logo": "",
             "name": "Dairy & Deli",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "j3fSbzHd6WNjk5agq",
             "icon": "",
+            "logo": "",
             "name": "Dairy & Deli",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "zoQpLEhZhJLJYkvcS",
             "icon": "",
+            "logo": "",
             "name": "Cheese & Labneh",
             "parentCategoryId": "ik2vcQYr2Ss8oBAf4"
         },
         {
             "_id": "jFgKYhKcdBkFHaKQh",
             "icon": "",
+            "logo": "",
             "name": "Cream",
             "parentCategoryId": "ik2vcQYr2Ss8oBAf4"
         },
         {
             "_id": "WXCJpX4FNHiCHndTu",
             "icon": "",
+            "logo": "",
             "name": "Spread",
             "parentCategoryId": "ik2vcQYr2Ss8oBAf4"
         },
         {
             "_id": "Bzw3Phv7Mr4P2tGm4",
             "icon": "",
+            "logo": "",
             "name": "Yogurt & Pudding",
             "parentCategoryId": "ik2vcQYr2Ss8oBAf4"
         },
         {
             "_id": "CG2zgJkeSTmuzhPFE",
             "icon": "",
+            "logo": "",
             "name": "Frozen",
             "parentCategoryId": ""
         },
         {
             "_id": "pkdtEnaBM4JY8cXQ3",
             "icon": "",
+            "logo": "",
             "name": "Ice Cubes",
             "parentCategoryId": "CG2zgJkeSTmuzhPFE"
         },
         {
             "_id": "K6Tr8GcmtNd6TNBQZ",
             "icon": "",
+            "logo": "",
             "name": "Frozen Seafood",
             "parentCategoryId": "CG2zgJkeSTmuzhPFE"
         },
         {
             "_id": "kWqhR5PhQdA6Q3TAE",
             "icon": "",
+            "logo": "",
             "name": "Fruits & Vegetables",
             "parentCategoryId": "CG2zgJkeSTmuzhPFE"
         },
         {
             "_id": "xXkmH2Tq9Mdt2FssK",
             "icon": "",
+            "logo": "",
             "name": "Mezza",
             "parentCategoryId": "CG2zgJkeSTmuzhPFE"
         },
@@ -336,24 +381,28 @@
         {
             "_id": "Cc83ugnsq5Ggefadx",
             "icon": "",
+            "logo": "",
             "name": "Fruits",
             "parentCategoryId": "pNifghWTx6mtcdR8N"
         },
         {
             "_id": "mB8rk2mLhCsKQioeq",
             "icon": "",
+            "logo": "",
             "name": "Prepared Fruits & Vegetables",
             "parentCategoryId": "pNifghWTx6mtcdR8N"
         },
         {
             "_id": "ZdauJAcTCmawLWMvw",
             "icon": "",
+            "logo": "",
             "name": "Dried Fruits & Nuts",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "fy8CaLQsiRTwsrYY6",
             "icon": "",
+            "logo": "",
             "name": "Vegetables",
             "parentCategoryId": "pNifghWTx6mtcdR8N"
         },
@@ -367,102 +416,119 @@
         {
             "_id": "NZjWu4yAyXRrRrgtN",
             "icon": "",
+            "logo": "",
             "name": "Canned & Packaged",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "o4W7LJZaGhS9T52Tw",
             "icon": "",
+            "logo": "",
             "name": "Groceries",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "xamtPP9dRL2dzgAT4",
             "icon": "",
+            "logo": "",
             "name": "Groceries",
             "parentCategoryId": "zeHQ2bEMEvYrWvP6f"
         },
         {
             "_id": "85XxhFqv5m52AF454",
             "icon": "",
+            "logo": "",
             "name": "Condiments & Dressings",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "HetuaJAyNXMqYqmp2",
             "icon": "",
+            "logo": "",
             "name": "Cooking Ingredients",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "SrheaJG7o65TcrGKj",
             "icon": "",
+            "logo": "",
             "name": "Herbs & Spices",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "LNKuT7Lvk4gzg5n4Q",
             "icon": "",
+            "logo": "",
             "name": "Mixes",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "YyrkP8GdDRzg66edr",
             "icon": "",
+            "logo": "",
             "name": "Oil & Vinegar",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "gq5eAvHYaWW92BsBE",
             "icon": "",
+            "logo": "",
             "name": "Pasta & Noodles",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "GRJY7C23rgMGyKdxy",
             "icon": "",
+            "logo": "",
             "name": "Pickles & Olives",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "5RcpsqAyengFeybgS",
             "icon": "",
+            "logo": "",
             "name": "Popcorn",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "tsSpHviqHmkgFnTW6",
             "icon": "",
+            "logo": "",
             "name": "Powdered Milk",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "P7oDQqTrXm9QGQz8T",
             "icon": "",
+            "logo": "",
             "name": "Rice & Grains",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "aTkZg96CgZySKcKrD",
             "icon": "",
+            "logo": "",
             "name": "Sauces & Pastes",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "w4GgxgqcuC8Tum6bB",
             "icon": "",
+            "logo": "",
             "name": "Soups & Stock",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "8pcd7RGyw2eHMdJAj",
             "icon": "",
+            "logo": "",
             "name": "Sugar & Sweetners",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "jqZNGtdwSyLTQWJii",
             "icon": "",
+            "logo": "",
             "name": "Syrup",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
@@ -476,498 +542,581 @@
         {
             "_id": "SmBb7MYobkLNJSyHz",
             "icon": "",
+            "logo": "",
             "name": "Accessories",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "WrwwryG2LDTdAYcHR",
             "icon": "",
+            "logo": "",
             "name": "Bath Sponge",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "7v9qKk2pLT6Bx3WWx",
             "icon": "",
+            "logo": "",
             "name": "Health & Beauty",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "bnCgmvYoxscSS7xcM",
             "icon": "",
+            "logo": "",
             "name": "Shower Gel",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "2W4ypP3YSLWfomWQa",
             "icon": "",
+            "logo": "",
             "name": "Body Cream",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "AsmMBfKNqMtRDhtaw",
             "icon": "",
+            "logo": "",
             "name": "Conditioner",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "jonwuf3iLMJoEAcQc",
             "icon": "",
+            "logo": "",
             "name": "Shampoo",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "sPeirFvW6QMBqQvqC",
             "icon": "",
+            "logo": "",
             "name": "Face Mask",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "unm3LHtqxeeota7Km",
             "icon": "",
+            "logo": "",
             "name": "Facial Care",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "uZFcnKaEkfg7C8m3G",
             "icon": "",
+            "logo": "",
             "name": "Feminine Care",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "jXSJcFfp6CB6qezTG",
             "icon": "",
+            "logo": "",
             "name": "First Aid",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "FYAXFo9WgJWxocaSj",
             "icon": "",
+            "logo": "",
             "name": "Hair Care",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "WCobWEXPEvZ4XmvAM",
             "icon": "",
+            "logo": "",
             "name": "Hand Sanitizers",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "Kf2i3Qcc4J9GFZzxD",
             "icon": "",
+            "logo": "",
             "name": "Men's Care",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "c9xaR4jf84EePu4Gh",
             "icon": "",
+            "logo": "",
             "name": "Men's Shaving",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "hbqSqjMDhpCmsXx8b",
             "icon": "",
+            "logo": "",
             "name": "Oral Care",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "v72RMLqRkSLtc2ikb",
             "icon": "",
+            "logo": "",
             "name": "Health & Beauty",
             "parentCategoryId": "zeHQ2bEMEvYrWvP6f"
         },
         {
             "_id": "tMdyKYgL3ZbthnExw",
             "icon": "",
+            "logo": "",
             "name": "Soap",
             "parentCategoryId": "YAYhia94ztAu9HfEh"
         },
         {
             "_id": "P4sAjQaYg7SwTM6pz",
             "icon": "",
+            "logo": "",
             "name": "Snacks",
             "parentCategoryId": "zeHQ2bEMEvYrWvP6f"
         },
         {
             "_id": "B4z2uCBABCLfJ6hoc",
             "icon": "",
+            "logo": "",
             "name": "Cleaning & Detergents",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "GRX5By5DhPJRFboQ9",
             "icon": "",
+            "logo": "",
             "name": "Sponges & Cloths",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "gYXbGBrtsDMTdr88k",
             "icon": "",
+            "logo": "",
             "name": "Toilet Care",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "8v2ejM7aERsuYfcNJ",
             "icon": "",
+            "logo": "",
             "name": "Household",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "TWbPGCqqGwqWx5665",
             "icon": "",
+            "logo": "",
             "name": "Gloves",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "cL3RmmLQyYtWyAoXR",
             "icon": "",
+            "logo": "",
             "name": "Dishwashing",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "sW2cuMY3QDj6P2JY9",
             "icon": "",
+            "logo": "",
             "name": "Mops",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "6nSTd4BTJY9FLgBPo",
             "icon": "",
+            "logo": "",
             "name": "Brooms & Brushes",
             "parentCategoryId": ""
         },
         {
             "_id": "KLYZMZCWY3c8pQyKc",
             "icon": "",
+            "logo": "",
             "name": "Sponge & Clothes",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "AngpkQh5optEdFtir",
             "icon": "",
+            "logo": "",
             "name": "Freshners",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "9HhuzsWAnGoCzZEoD",
             "icon": "",
+            "logo": "",
             "name": "Garden Care",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "Qgjq8K2xJYQeG69Fm",
             "icon": "",
+            "logo": "",
             "name": "Laundry",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "uSqsRaa5fiewqPJ95",
             "icon": "",
+            "logo": "",
             "name": "Miscellaneous",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "7kHgBAni3PT7qAz4f",
             "icon": "",
+            "logo": "",
             "name": "Paper & Plastic",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "RGSTwjfDEbfjEvvNj",
             "icon": "",
+            "logo": "",
             "name": "Pest Control",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "Wr9M7ZuckRZDuESbo",
             "icon": "",
+            "logo": "",
             "name": "Brushes",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "8Kzo8S7kCBaWsBMso",
             "icon": "",
+            "logo": "",
             "name": "Surface Cleaners",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "djC8KWD2c9GTWx5C6",
             "icon": "",
+            "logo": "",
             "name": "Tissues",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "iCdqtXiGTiZLZwMzT",
             "icon": "",
+            "logo": "",
             "name": "Toilet Rolls",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "HQXLgmgHx5ELrerjq",
             "icon": "",
+            "logo": "",
             "name": "Kitchen Rolls",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "FpvGk2jpJgSPjvknc",
             "icon": "",
+            "logo": "",
             "name": "Ice Cream",
             "parentCategoryId": ""
         },
         {
             "_id": "B3MzhzauuagkrceDv",
             "icon": "",
+            "logo": "",
             "name": "Kitchen & Dining",
             "parentCategoryId": ""
         },
         {
             "_id": "FBZ6hPPrtwNJ2torW",
             "icon": "",
+            "logo": "",
             "name": "Baking Tools",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         },
         {
             "_id": "J7WuDbZZxH5Tjk5ZP",
             "icon": "",
+            "logo": "",
             "name": "Appliances",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         },
         {
             "_id": "zYCdFiCT8cvcswB74",
             "icon": "",
+            "logo": "",
             "name": "Containers",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         },
         {
             "_id": "iv2PhDHurRugYsQSs",
             "icon": "",
+            "logo": "",
             "name": "Cooking Tools",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         },
         {
             "_id": "7GcffAja778uKtbe6",
             "icon": "",
+            "logo": "",
             "name": "Kettles & Pots",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         },
         {
             "_id": "RqKzH7rivjRCzZTzJ",
             "icon": "",
+            "logo": "",
             "name": "Knives And Cutters",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         },
         {
             "_id": "my54KixDwJvavczJT",
             "icon": "",
+            "logo": "",
             "name": "Pressure Cookers",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         },
         {
             "_id": "dmPkajyQ9qvc7tmP9",
             "icon": "",
+            "logo": "",
             "name": "Tableware",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         },
         {
             "_id": "MnEHFNSwA4cGMEmBK",
             "icon": "",
+            "logo": "",
             "name": "Tools And Gadgets",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         },
         {
             "_id": "uDM3qEpdGdxhhXhB9",
             "icon": "",
+            "logo": "",
             "name": "Meat & Poultry",
             "parentCategoryId": ""
         },
         {
             "_id": "GGvbpqd6q8iAuQsQQ",
             "icon": "",
+            "logo": "",
             "name": "Chicken",
             "parentCategoryId": "uDM3qEpdGdxhhXhB9"
         },
         {
             "_id": "4yniSMtporqcmvXz6",
             "icon": "",
+            "logo": "",
             "name": "Dips",
             "parentCategoryId": "uDM3qEpdGdxhhXhB9"
         },
         {
             "_id": "mtWT998gwwhR4HXAg",
             "icon": "",
+            "logo": "",
             "name": "Meat",
             "parentCategoryId": "uDM3qEpdGdxhhXhB9"
         },
         {
             "_id": "HZaE2wqkGhrq7wpxS",
             "icon": "",
+            "logo": "",
             "name": "Air Care",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "s9zxcDD93WpZcE8AS",
             "icon": "",
+            "logo": "",
             "name": "Beverages",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "Ftq2aELjwoQ3ABy7H",
             "icon": "",
+            "logo": "",
             "name": "Cereals",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "Nf6KvNy8vw685jviX",
             "icon": "",
+            "logo": "",
             "name": "Flour",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "HHMLev2yfb9qEkZYj",
             "icon": "",
+            "logo": "",
             "name": "Himalaya Products",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "WGcHakKyx54CMEFdk",
             "icon": "",
+            "logo": "",
             "name": "Rice & Grains",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "5gzFSkTtFKyLvZvgh",
             "icon": "",
+            "logo": "",
             "name": "Seeds",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "oAsgm2QnamEoFSi2X",
             "icon": "",
+            "logo": "",
             "name": "Organic",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "3dCDwzqEu3B2nzRMk",
             "icon": "",
+            "logo": "",
             "name": "Snacks",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "LCKf464Az8oy9u45F",
             "icon": "",
+            "logo": "",
             "name": "Snacks",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "e7A6TxDEZ4Rzz3wQE",
             "icon": "",
+            "logo": "",
             "name": "Healthy Snacks",
             "parentCategoryId": "GzE5usW4fApu38pjA"
         },
         {
             "_id": "2i9GxqkgTYWDqYojJ",
             "icon": "",
+            "logo": "",
             "name": "Healthy Snacks",
             "parentCategoryId": ""
         },
         {
             "_id": "vpQ9oHX9xv7hQd7s4",
             "icon": "",
+            "logo": "",
             "name": "Spreads",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "mSmRgXtz7MrAmbWJg",
             "icon": "",
+            "logo": "",
             "name": "Superfoods",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "ysQiRxXrZruFFnSHc",
             "icon": "",
+            "logo": "",
             "name": "Over The Counter",
             "parentCategoryId": ""
         },
         {
             "_id": "YoDWYsF6LmuG3CX3A",
             "icon": "",
+            "logo": "",
             "name": "Batteries",
             "parentCategoryId": "ysQiRxXrZruFFnSHc"
         },
         {
             "_id": "zPpCdbChdFYzEEdn9",
             "icon": "",
+            "logo": "",
             "name": "Lighters",
             "parentCategoryId": "ysQiRxXrZruFFnSHc"
         },
         {
             "_id": "K9qWbzB6p99kbWA5N",
             "icon": "",
+            "logo": "",
             "name": "Miscellaneous",
             "parentCategoryId": "ysQiRxXrZruFFnSHc"
         },
         {
             "_id": "podsLeu7a5PR5Tc2w",
             "icon": "",
+            "logo": "",
             "name": "Tools & Accessories",
             "parentCategoryId": "ysQiRxXrZruFFnSHc"
         },
         {
             "_id": "8MghRbFqAtoc7qLB3",
             "icon": "",
+            "logo": "",
             "name": "Pet Care",
             "parentCategoryId": ""
         },
         {
             "_id": "WLWj4nJecMmtQtibp",
             "icon": "",
+            "logo": "",
             "name": "Cats",
             "parentCategoryId": "8MghRbFqAtoc7qLB3"
         },
         {
             "_id": "EhLvi8MMbsCburuWk",
             "icon": "",
+            "logo": "",
             "name": "Dogs",
             "parentCategoryId": "8MghRbFqAtoc7qLB3"
         },
         {
             "_id": "TxLQqxZ73T9LJqYwS",
             "icon": "",
+            "logo": "",
             "name": "Ready-Made Boxes",
             "parentCategoryId": ""
         },
         {
             "_id": "Q92NYxyToT9gdfn86",
             "icon": "",
+            "logo": "",
             "name": "Cakes & Pastries",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "MErx4QbCjWJ5yeFC5",
             "icon": "",
+            "logo": "",
             "name": "Candy",
             "parentCategoryId": "GzE5usW4fApu38pjA"
         },
         {
             "_id": "4vZMtx4EGWKizHY2a",
             "icon": "",
+            "logo": "",
             "name": "Chips & Dip",
             "parentCategoryId": "GzE5usW4fApu38pjA"
         },
         {
             "_id": "8Yejm2jpzazFJJpe7",
             "icon": "",
+            "logo": "",
             "name": "Crackers & Crisps",
             "parentCategoryId": "GzE5usW4fApu38pjA"
         },
         {
             "_id": "SsymfKLHKgFKEisqc",
             "icon": "",
+            "logo": "",
             "name": "Nuts & Seeds",
             "parentCategoryId": "GzE5usW4fApu38pjA"
         },
         {
             "_id": "55xtdeipFJqzZuXPG",
             "icon": "",
+            "logo": "",
             "name": "Popcorn",
             "parentCategoryId": "GzE5usW4fApu38pjA"
         },
@@ -981,78 +1130,91 @@
         {
             "_id": "cbctxZHrycBKQZgC8",
             "icon": "",
+            "logo": "",
             "name": "Cheese & Labne",
             "parentCategoryId": "G2C2KeTfdufbsDWJh"
         },
         {
             "_id": "md33Hv4XyE6TaHQpF",
             "icon": "",
+            "logo": "",
             "name": "Milk",
             "parentCategoryId": "G2C2KeTfdufbsDWJh"
         },
         {
             "_id": "b8GaiKBvHEXGzYoJ9",
             "icon": "",
+            "logo": "",
             "name": "Butter & Marguerine",
             "parentCategoryId": "G2C2KeTfdufbsDWJh"
         },
         {
             "_id": "Rb8Qd8tycCnXsqMbE",
             "icon": "",
+            "logo": "",
             "name": "Eggs",
             "parentCategoryId": "G2C2KeTfdufbsDWJh"
         },
         {
             "_id": "SJ545nAKbkqzvrQHm",
             "icon": "",
+            "logo": "",
             "name": "Cheese & Labneh",
             "parentCategoryId": "G2C2KeTfdufbsDWJh"
         },
         {
             "_id": "wfypqMQ3knozkxtWF",
             "icon": "",
+            "logo": "",
             "name": "Cream",
             "parentCategoryId": "G2C2KeTfdufbsDWJh"
         },
         {
             "_id": "Lqi5jsNzxT9tYX9nL",
             "icon": "",
+            "logo": "",
             "name": "Spread",
             "parentCategoryId": "G2C2KeTfdufbsDWJh"
         },
         {
             "_id": "GZztTjXBLdQXEEaXh",
             "icon": "",
+            "logo": "",
             "name": "Yogurt & Pudding",
             "parentCategoryId": "G2C2KeTfdufbsDWJh"
         },
         {
             "_id": "DPES4fPCEYfPSgyWw",
             "icon": "",
+            "logo": "",
             "name": "Fresh",
             "parentCategoryId": ""
         },
         {
             "_id": "zTKyQtpNE6hJzaNuy",
             "icon": "",
+            "logo": "",
             "name": "Juice",
             "parentCategoryId": "DPES4fPCEYfPSgyWw"
         },
         {
             "_id": "2fSn3WtcPGgmhzcty",
             "icon": "",
+            "logo": "",
             "name": "Ice Cream",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "MbkYMx8Hi3G5nET8Y",
             "icon": "",
+            "logo": "",
             "name": "test",
             "parentCategoryId": ""
         },
         {
             "_id": "XisEKattz6z7aX6Fq",
             "icon": "",
+            "logo": "",
             "name": "Ice Cream",
             "parentCategoryId": "DPES4fPCEYfPSgyWw"
         },
@@ -1066,348 +1228,406 @@
         {
             "_id": "7Cj2fLzPxrHrqkA4w",
             "icon": "",
+            "logo": "",
             "name": "TEST",
             "parentCategoryId": "PECRBJiM6ALnTtxm5"
         },
         {
             "_id": "ruo3o6RJwd3xaXjSm",
             "icon": "",
+            "logo": "",
             "name": "Grocery",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "gwKLbKzNX7QcdEs49",
             "icon": "",
+            "logo": "",
             "name": "Mops & Brushes",
             "parentCategoryId": "ihQrAwTysX3TXvfZG"
         },
         {
             "_id": "AwpR6bkN5zKPJ9Sc3",
             "icon": "",
+            "logo": "",
             "name": "Fresh Juice",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "RdmDG4jQZwYLBMhNo",
             "icon": "",
+            "logo": "",
             "name": "Dairy & Deli",
             "parentCategoryId": "zeHQ2bEMEvYrWvP6f"
         },
         {
             "_id": "A7zNzWaSLguABKub3",
             "icon": "",
+            "logo": "",
             "name": "Sauces & Pastes",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "5J9d94p2FXpFX7j4w",
             "icon": "",
+            "logo": "",
             "name": "Ice Cream",
             "parentCategoryId": "zeHQ2bEMEvYrWvP6f"
         },
         {
             "_id": "vxZn6dZevdMzcppnb",
             "icon": "",
+            "logo": "",
             "name": "Frozen",
             "parentCategoryId": "zeHQ2bEMEvYrWvP6f"
         },
         {
             "_id": "fBC9Cqe8ytaoGZFyz",
             "icon": "",
+            "logo": "",
             "name": "Frozen Chicken",
             "parentCategoryId": "CG2zgJkeSTmuzhPFE"
         },
         {
             "_id": "tjX9AvogHukfvdz5f",
             "icon": "",
+            "logo": "",
             "name": "Baby World",
             "parentCategoryId": "zeHQ2bEMEvYrWvP6f"
         },
         {
             "_id": "zLPbDySWJLHozMsdt",
             "icon": "",
+            "logo": "",
             "name": "Lighting",
             "parentCategoryId": "ysQiRxXrZruFFnSHc"
         },
         {
             "_id": "ih8fatgwrsFLuB5JM",
             "icon": "",
+            "logo": "",
             "name": "Miscellaneous",
             "parentCategoryId": "Co5b7iEnEKi3bCcD7"
         },
         {
             "_id": "2zGDyH4FY3Gq3hpX9",
             "icon": "",
+            "logo": "",
             "name": "Sexual Health",
             "parentCategoryId": "ysQiRxXrZruFFnSHc"
         },
         {
             "_id": "GhvCFdE53Ys82dxAs",
             "icon": "",
+            "logo": "",
             "name": "undefined",
             "parentCategoryId": ""
         },
         {
             "_id": "wKqrjoBRwKSXoySKq",
             "icon": "",
+            "logo": "",
             "name": "Cleaning & Detergents",
             "parentCategoryId": "GhvCFdE53Ys82dxAs"
         },
         {
             "_id": "hE38j9KKmbj2uyGJh",
             "icon": "",
+            "logo": "",
             "name": "Surface Cleaners",
             "parentCategoryId": "8v2ejM7aERsuYfcNJ"
         },
         {
             "_id": "hHEBLBAZJQ4WCbc3B",
             "icon": "",
+            "logo": "",
             "name": "Cosmetics",
             "parentCategoryId": ""
         },
         {
             "_id": "iaCdMaAH3f3XEhLTe",
             "icon": "",
+            "logo": "",
             "name": "Hair Care",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "3zsnwbtgSnB934gig",
             "icon": "",
+            "logo": "",
             "name": "Skin Care",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "6aihhBrZFfn7XMz27",
             "icon": "",
+            "logo": "",
             "name": "Masks & Scrubs",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "RK7u8gnNCMsxsssRv",
             "icon": "",
+            "logo": "",
             "name": "MakeUp Removal",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "LNEW7gHpyf64SFHTJ",
             "icon": "",
+            "logo": "",
             "name": "Sun Care",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "WbuxXiFNhtLKsuS6m",
             "icon": "",
+            "logo": "",
             "name": "Face Wash",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "4jnM2P5gDX2Qt7eAG",
             "icon": "",
+            "logo": "",
             "name": "Face Care",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "6P4vfou9q84yQuX5E",
             "icon": "",
+            "logo": "",
             "name": "Eye Care",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "zhucdq5psCjwnQkHJ",
             "icon": "",
+            "logo": "",
             "name": "Lip Care",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "DKiLAQY4P3vLHvox4",
             "icon": "",
+            "logo": "",
             "name": "Nail Care",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "BiZDWkQFP2muwLnJd",
             "icon": "",
+            "logo": "",
             "name": "Household",
             "parentCategoryId": "zeHQ2bEMEvYrWvP6f"
         },
         {
             "_id": "amoEsmn7fkR8yDahW",
             "icon": "",
+            "logo": "",
             "name": "Body Wash",
             "parentCategoryId": "hHEBLBAZJQ4WCbc3B"
         },
         {
             "_id": "pbeKNMH7hnQJ6RhD8",
             "icon": "",
+            "logo": "",
             "name": "Personal Care",
             "parentCategoryId": ""
         },
         {
             "_id": "rT7yJjW38uqDpRAkN",
             "icon": "",
+            "logo": "",
             "name": "Supplements",
             "parentCategoryId": ""
         },
         {
             "_id": "Aq7kCGcF3tjeRDtBz",
             "icon": "",
+            "logo": "",
             "name": "Workout",
             "parentCategoryId": "rT7yJjW38uqDpRAkN"
         },
         {
             "_id": "pDePL3ckeKbSfvwdB",
             "icon": "",
+            "logo": "",
             "name": "Wellness",
             "parentCategoryId": "rT7yJjW38uqDpRAkN"
         },
         {
             "_id": "Z4jbQQzZ9XZpTGg7S",
             "icon": "",
+            "logo": "",
             "name": "Protien",
             "parentCategoryId": "rT7yJjW38uqDpRAkN"
         },
         {
             "_id": "Qa5pvQzbpGa7dKaX6",
             "icon": "",
+            "logo": "",
             "name": "Sauces & Condiments",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "tW3gewFxdqFgQ7oxs",
             "icon": "",
+            "logo": "",
             "name": "Oil & Vinegar",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "as5dCicsAQvibrvvh",
             "icon": "",
+            "logo": "",
             "name": "Supplements",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "QQdyCZ4ajgw67DtyF",
             "icon": "",
+            "logo": "",
             "name": "Organic",
             "parentCategoryId": "rT7yJjW38uqDpRAkN"
         },
         {
             "_id": "4xiDHcnhD77vYxSuW",
             "icon": "",
+            "logo": "",
             "name": "Grains & Pulses",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "YHZDqh48rmwygw8k4",
             "icon": "",
+            "logo": "",
             "name": "Sugar & Sweetners",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "XeTKBjhmjS6DjNwro",
             "icon": "",
+            "logo": "",
             "name": "Cheese & Labneh",
             "parentCategoryId": "NWnzAqLuWBfRiJMa7"
         },
         {
             "_id": "q72rw5Nc4hKNaXPG7",
             "icon": "",
+            "logo": "",
             "name": "Black Friday",
             "parentCategoryId": ""
         },
         {
             "_id": "nywPtwqDgF9F7D3pn",
             "icon": "",
+            "logo": "",
             "name": "Organic",
             "parentCategoryId": "q72rw5Nc4hKNaXPG7"
         },
         {
             "_id": "iWMmsgKRELJGMMMCi",
             "icon": "",
+            "logo": "",
             "name": "Household",
             "parentCategoryId": "q72rw5Nc4hKNaXPG7"
         },
         {
             "_id": "v4qWK6L4jhJsekcEX",
             "icon": "",
+            "logo": "",
             "name": "3MPlast",
             "parentCategoryId": ""
         },
         {
             "_id": "9StbNLr7WuZE65E7v",
             "icon": "",
+            "logo": "",
             "name": "Garden Pots & Planters",
             "parentCategoryId": "v4qWK6L4jhJsekcEX"
         },
         {
             "_id": "rhJYTALgzgFZcfkQp",
             "icon": "",
+            "logo": "",
             "name": "Cleaning",
             "parentCategoryId": "v4qWK6L4jhJsekcEX"
         },
         {
             "_id": "rksnnY29vZzvGZ3wy",
             "icon": "",
+            "logo": "",
             "name": "Kitchenware",
             "parentCategoryId": "v4qWK6L4jhJsekcEX"
         },
         {
             "_id": "eQ7XQefkNmzt64eFW",
             "icon": "",
+            "logo": "",
             "name": "Dustbin & Recycling",
             "parentCategoryId": "v4qWK6L4jhJsekcEX"
         },
         {
             "_id": "NKdgm8LbTiQkvR7NZ",
             "icon": "",
+            "logo": "",
             "name": "Storage & Organizers",
             "parentCategoryId": "v4qWK6L4jhJsekcEX"
         },
         {
             "_id": "FtrDZzmpGsNvoJ3az",
             "icon": "",
+            "logo": "",
             "name": "Laundry",
             "parentCategoryId": "v4qWK6L4jhJsekcEX"
         },
         {
             "_id": "afFxALhCApvkkPttS",
             "icon": "",
+            "logo": "",
             "name": "Brands",
             "parentCategoryId": ""
         },
         {
             "_id": "4eKjowX6y5Sk5Pwd5",
             "icon": "",
+            "logo": "",
             "name": "Bell Hypoallergenic",
             "parentCategoryId": "afFxALhCApvkkPttS"
         },
         {
             "_id": "D6e8DPi6jS6AosbZR",
             "icon": "",
+            "logo": "",
             "name": "My Beauty",
             "parentCategoryId": ""
         },
         {
             "_id": "B3wSM2arvMukCCCtk",
             "icon": "",
+            "logo": "",
             "name": "Cosmetics",
             "parentCategoryId": "D6e8DPi6jS6AosbZR"
         },
         {
             "_id": "akwre9RLwYP2AXNgw",
             "icon": "",
+            "logo": "",
             "name": "Bundles",
             "parentCategoryId": "TxLQqxZ73T9LJqYwS"
         },
         {
             "_id": "nn8iNhY2Ty2oGDNiq",
             "icon": "",
+            "logo": "",
             "name": "TEST",
             "parentCategoryId": "ysQiRxXrZruFFnSHc"
         },
         {
             "_id": "ahQMgEdTMPcw2DkBq",
             "icon": "",
+            "logo": "",
             "name": "TEST Kitchen",
             "parentCategoryId": "B3MzhzauuagkrceDv"
         }

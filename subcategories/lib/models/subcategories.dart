@@ -21,14 +21,16 @@ class SubCategories {
         logo: json['icon'] ?? '',
         parentCategoryId: json['parentCategoryId']);
   }
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['_id'] = id;
-    data['name'] = name;
-    data['parentCategoryId'] = parentCategoryId;
-    return data;
-  }
 }
+
+  // Map<String, dynamic> toJson() {
+  //   final Map<String, dynamic> data = Map<String, dynamic>();
+  //   data['_id'] = id;
+  //   data['name'] = name;
+  //   data['parentCategoryId'] = parentCategoryId;
+  //   return data;
+  // }
+
 // Step 1: On navigate pass json data
 // Step 2: Filter json data (details of an item)
 // Step 3: Filer json data (condition: display name id category= parent Id)

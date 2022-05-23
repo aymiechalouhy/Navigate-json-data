@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'package:subcategories/models/subcategories.dart';
 
 class SubCategoriesDetailScreen extends StatefulWidget {
   const SubCategoriesDetailScreen({Key? key}) : super(key: key);
-
+  
   static const String routeName = '/subcategory-detail';
 
   @override
@@ -13,79 +14,59 @@ class SubCategoriesDetailScreen extends StatefulWidget {
 }
 
 class _SubCategoriesDetailScreenState extends State<SubCategoriesDetailScreen> {
-  var subcatName = "";
-  SubCategories? subcategories;
-
-  @override
-  //btetnaffaz awwal shi bel stateful widget, bedna yeha tetnaffaz abel build
-  void initState() {
-    super.initState();
-  }
-
-  @override
-  //Called when a dependency of this State object changes.
-  void didChangeDependencies() {
-    var subcategoryString =
-        ModalRoute.of(context)?.settings.arguments as String;
-    debugPrint('page 2');
-    debugPrint(subcategoryString);
-
-    var subcategoryJson = jsonDecode(subcategoryString);
-    debugPrint(subcategoryJson.toString());
-
+  List<SubCategories> _subCategories = [];
+  Future<void> readJsonFile(String parentCategoryId) async {
+    final String response =
+        await rootBundle.loadString('assets/subcategories.json');
+    final subCat = await json.decode(response);
+    debugPrint(subCat.toString());
+    var list = subCat["items"] as List<dynamic>;
     setState(() {
-      subcategories = SubCategories.fromJson(subcategoryJson);
-      subcatName = subcategories!.name;
+      _subCategories = list
+          .map((e) => SubCategories.fromJson(e))
+          .where((e) => e.parentCategoryId == parentCategoryId)
+          .toList();
     });
-    super.didChangeDependencies();
   }
 
   @override
   Widget build(BuildContext context) {
+    // Get the parent category id passed using Navigator.pushNamed
+    String parentCategoryId =
+        ModalRoute.of(context)!.settings.arguments as String;
+    if (_subCategories.isEmpty) readJsonFile(parentCategoryId);
     return Scaffold(
-      appBar: AppBar(
-        title: Text(subcatName),
-      ),
-      body: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            const SizedBox(
-              height: 25,
-            ),
-            Container(
-              margin: const EdgeInsets.all(5.0),
-              child: Text("id: " + (subcategories!.id),
-                  style: const TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25.0)),
-            ),
-            const SizedBox(
-              height: 25,
-            ),
-            Container(
-                margin: const EdgeInsets.all(5.0),
-                child: Text("Name : " + (subcategories!.name.toString()),
-                    style: const TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25.0))),
-            const SizedBox(
-              height: 25,
-            ),
-            Container(
-                margin: const EdgeInsets.all(5.0),
-                child: Text(
-                    "ParentId : " +
-                        (subcategories!.parentCategoryId.toString()),
-                    style: const TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25.0))),
-          ],
+        appBar: AppBar(
+          title: const Text("Subcategories"),
         ),
-      ),
-    );
+        body: Column(
+          children: [
+            // Padding(
+            //   padding: const EdgeInsets.all(15.0),
+            //   child: ElevatedButton(
+            //       onPressed: () => readJsonFile(parentCategoryId),
+            //       child: const Text("Load SubCategories")),
+            // ), //  if (_subcategories.isNotEmpty)
+            if (_subCategories.isNotEmpty)
+              Expanded(
+                child: ListView.builder(
+                  itemCount: _subCategories.length,
+                  itemBuilder: (BuildContext context, index) {
+                    return Card(
+                        margin: const EdgeInsets.all(15.0),
+                        color: const Color.fromARGB(255, 138, 192, 218),
+                        child: ListTile(
+                          title: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(_subCategories[index].name),
+                          ),
+                        ));
+                  },
+                ),
+              )
+            else
+              const Text("No Subcategoriess"),
+          ],
+        ));
   }
 }

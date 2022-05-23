@@ -14,9 +14,10 @@ class JsonSubCategories extends StatefulWidget {
 }
 
 class _JsonSubCategoriesState extends State<JsonSubCategories> {
-  List<SubCategories> mainCategories = [];
-
+ 
+  List<SubCategories> _mainCategories = [];
   Future<void> readJsonFile() async {
+    debugPrint("!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>!Reading json file");
     final String response =
         await rootBundle.loadString('assets/subcategories.json');
     final subCat = await json.decode(response);
@@ -24,28 +25,27 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
     var list = subCat["items"] as List<dynamic>;
 
     setState(() {
-      mainCategories = list.map((e) => SubCategories.fromJson(e)).where((e)=>  e.parentCategoryId?.isEmpty ?? true).toList();
+      _mainCategories = list
+          .map((e) => SubCategories.fromJson(e))
+          .where((e) => e.parentCategoryId?.isEmpty ?? true)
+          .toList();
     });
   }
-
   @override
   Widget build(BuildContext context) {
+    if (_mainCategories.isEmpty) {
+      readJsonFile();
+    }
     return Scaffold(
       appBar: AppBar(
         title: const Text("load json file"),
       ),
       body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: ElevatedButton(
-                onPressed: readJsonFile,
-                child: const Text("Load SubCategories")),
-          ), //  if (subcategories.isNotEmpty)
-          if (mainCategories.isNotEmpty)
+        children: [    
+          if (_mainCategories.isNotEmpty)
             Expanded(
               child: ListView.builder(
-                itemCount: mainCategories.length,
+                itemCount: _mainCategories.length,
                 itemBuilder: (BuildContext context, index) {
                   return Card(
                       margin: const EdgeInsets.all(15.0),
@@ -53,34 +53,33 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
                       child: ListTile(
                         title: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text(mainCategories[index].name),
+                          child: Text(_mainCategories[index].name), 
                         ),
                         subtitle: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            mainCategories[index].logo.toString(),
-                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          child: Image.network(
+                            _mainCategories[index].logo.toString(),
+                            height: 100,
+                            width: 100,
+                               errorBuilder: (ctx, o, n) {
+                                  return
+                                  const Icon(Icons.error);
+                                },
                           ),
                         ),
                         onTap: () {
-                          // print(jsonEncode(products[index]));
                           Navigator.of(context).pushNamed(
                               SubCategoriesDetailScreen.routeName,
-                              arguments: jsonEncode(mainCategories[index]));
+                              arguments: _mainCategories[index].id);
                         },
                       ));
                 },
               ),
             )
-          else
-            const Text("No Subcategoriess"),
+          // else
+          //   const Text("No Subcategoriess"),
         ],
       ),
     );
   }
 }
-
-/*
-items
-isEmpty
-*/
