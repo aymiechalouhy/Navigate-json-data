@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
@@ -5,7 +7,7 @@ import 'package:subcategories/models/subcategories.dart';
 
 class SubCategoriesDetailScreen extends StatefulWidget {
   const SubCategoriesDetailScreen({Key? key}) : super(key: key);
-  
+
   static const String routeName = '/subcategory-detail';
 
   @override
@@ -39,34 +41,46 @@ class _SubCategoriesDetailScreenState extends State<SubCategoriesDetailScreen> {
         appBar: AppBar(
           title: const Text("Subcategories"),
         ),
-        body: Column(
-          children: [
-            // Padding(
-            //   padding: const EdgeInsets.all(15.0),
-            //   child: ElevatedButton(
-            //       onPressed: () => readJsonFile(parentCategoryId),
-            //       child: const Text("Load SubCategories")),
-            // ), //  if (_subcategories.isNotEmpty)
-            if (_subCategories.isNotEmpty)
-              Expanded(
-                child: ListView.builder(
-                  itemCount: _subCategories.length,
-                  itemBuilder: (BuildContext context, index) {
-                    return Card(
-                        margin: const EdgeInsets.all(15.0),
-                        color: const Color.fromARGB(255, 138, 192, 218),
-                        child: ListTile(
-                          title: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(_subCategories[index].name),
-                          ),
-                        ));
-                  },
-                ),
-              )
-            else
-              const Text("No Subcategoriess"),
-          ],
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              if (_subCategories.isNotEmpty)
+                SizedBox(
+                  height: 100,
+                  child: FutureBuilder(builder: ((context, snapshot) {
+                    return GridView.builder(
+                      scrollDirection: Axis.horizontal,
+                      // shrinkWrap: true,
+                      gridDelegate:
+                          const SliverGridDelegateWithMaxCrossAxisExtent(
+                        maxCrossAxisExtent: 200,
+                        childAspectRatio: 2/ 2,
+                        mainAxisSpacing: 1,
+                      ),
+                      itemBuilder: (context, index) => Column(
+                        children: [
+                          Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 30),
+                                child: Text(                                                          
+                                  _subCategories[index].name,
+                                  style: const TextStyle(fontSize: 8.2,
+                                  fontWeight: FontWeight.bold),
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                      itemCount: _subCategories.length,
+                    );
+                  })),
+                )
+              else
+                const Text("No Subcategoriess"),
+            ],
+          ),
         ));
   }
 }

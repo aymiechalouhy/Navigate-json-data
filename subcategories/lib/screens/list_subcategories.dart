@@ -70,8 +70,8 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
                                 errorBuilder: (ctx, o, n) {
                                   return Image.asset(
                                     "assets/images/load.png",
-                                    height: 100,
-                                    width: 100,
+                                    height: 40,
+                                    width: 40,
                                     errorBuilder: (ctx, o, n) {
                                       return Image.asset("assets/load.png");
                                     },
