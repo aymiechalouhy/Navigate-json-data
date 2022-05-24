@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-
 class SubCategories {
   String id;
   String name;

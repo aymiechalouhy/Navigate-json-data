@@ -1,9 +1,6 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:subcategories/models/listcategories.dart';
-import 'package:subcategories/models/subcategories.dart';
 import 'package:subcategories/screens/details_subcategories.dart';
 
 class JsonSubCategories extends StatefulWidget {
@@ -16,29 +13,12 @@ class JsonSubCategories extends StatefulWidget {
 }
 
 class _JsonSubCategoriesState extends State<JsonSubCategories> {
-  // List<SubCategories> _mainCategories = [];
-  // Future<void> readJsonFile() async {
-  //   debugPrint("!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>!Reading json file");
-  //   final String response =
-  //       await rootBundle.loadString('assets/subcategories.json');
-  //   final subCat = await json.decode(response);
-  //   debugPrint(subCat.toString());
-  //   var list = subCat["items"] as List<dynamic>;
   @override
   void initState() {
     super.initState();
     final data = Provider.of<AllCategories>(context, listen: false);
     data.loadCategories(context);
   }
-
-  //   setState(() {
-  //     _mainCategories = list
-  //         .map((e) => SubCategories.fromJson(e))
-  //         .where((e) => e.parentCategoryId?.isEmpty ?? true)
-  //         .toList();
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     final data = Provider.of<AllCategories>(context);
@@ -114,4 +94,3 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
     );
   }
 }
-// }

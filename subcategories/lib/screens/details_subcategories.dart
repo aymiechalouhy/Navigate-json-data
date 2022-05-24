@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'dart:convert';
-import 'package:subcategories/models/subcategories.dart';
+import 'package:provider/provider.dart';
+import 'package:subcategories/models/listcategories.dart';
 
 class SubCategoriesDetailScreen extends StatefulWidget {
   const SubCategoriesDetailScreen({Key? key}) : super(key: key);
@@ -14,27 +13,15 @@ class SubCategoriesDetailScreen extends StatefulWidget {
 }
 
 class _SubCategoriesDetailScreenState extends State<SubCategoriesDetailScreen> {
-  List<SubCategories> _subCategories = [];
-  Future<void> readJsonFile(String parentCategoryId) async {
-    final String response =
-        await rootBundle.loadString('assets/subcategories.json');
-    final subCat = await json.decode(response);
-    debugPrint(subCat.toString());
-    var list = subCat["items"] as List<dynamic>;
-    setState(() {
-      _subCategories = list
-          .map((e) => SubCategories.fromJson(e))
-          .where((e) => e.parentCategoryId == parentCategoryId)
-          .toList();
-    });
+  @override
+  void initState() {
+    super.initState();
+    final data = Provider.of<AllCategories>(context, listen: false);
+    data.loadCategories(context);
   }
-
   @override
   Widget build(BuildContext context) {
-    // Get the parent category id passed using Navigator.pushNamed
-    String parentCategoryId =
-        ModalRoute.of(context)!.settings.arguments as String;
-    if (_subCategories.isEmpty) readJsonFile(parentCategoryId);
+    final data = Provider.of<AllCategories>(context);
     return Scaffold(
         appBar: AppBar(
           title: const Text("Subcategories"),
@@ -42,7 +29,7 @@ class _SubCategoriesDetailScreenState extends State<SubCategoriesDetailScreen> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              if (_subCategories.isNotEmpty)
+              if (data.details.isNotEmpty)
                 SizedBox(
                   height: 100,
                   child: FutureBuilder(builder: ((context, snapshot) {
@@ -62,7 +49,10 @@ class _SubCategoriesDetailScreenState extends State<SubCategoriesDetailScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 30),
                                 child: Text(                                                          
-                                  _subCategories[index].name,
+                                  data.details
+                                    .elementAt(index)
+                                    .name
+                                    .toString(),
                                   style: const TextStyle(fontSize:10,
                                   fontWeight: FontWeight.bold),
                                 ),
@@ -71,7 +61,7 @@ class _SubCategoriesDetailScreenState extends State<SubCategoriesDetailScreen> {
                           )
                         ],
                       ),
-                      itemCount: _subCategories.length,
+                      itemCount: data.details.length,
                     );
                   })),
                 )

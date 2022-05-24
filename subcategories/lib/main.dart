@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:subcategories/models/listcategories.dart';
-import 'package:subcategories/models/subcategories.dart';
 import 'package:subcategories/screens/list_subcategories.dart';
 import 'package:subcategories/screens/details_subcategories.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MultiProvider(providers: [
-    ChangeNotifierProvider(create: (context) => AllCategories()),
+  runApp(MultiProvider(
+    providers: [
+    ChangeNotifierProvider(
+     create: (context) => AllCategories()),
   ], child: MyApp()));
 }
 
