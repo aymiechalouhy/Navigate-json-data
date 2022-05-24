@@ -14,7 +14,7 @@ class SubCategories {
   });
 
   factory SubCategories.fromJson(Map<String, dynamic> json) {
-    debugPrint(json.toString());
+    // debugPrint(json.toString());
     return SubCategories(
         id: json['_id'],
         name: json['name'],

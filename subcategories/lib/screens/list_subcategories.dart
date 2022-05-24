@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+import 'package:subcategories/models/listcategories.dart';
 import 'package:subcategories/models/subcategories.dart';
 import 'package:subcategories/screens/details_subcategories.dart';
 
@@ -14,46 +16,50 @@ class JsonSubCategories extends StatefulWidget {
 }
 
 class _JsonSubCategoriesState extends State<JsonSubCategories> {
-  List<SubCategories> _mainCategories = [];
-  Future<void> readJsonFile() async {
-    debugPrint("!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>!Reading json file");
-    final String response =
-        await rootBundle.loadString('assets/subcategories.json');
-    final subCat = await json.decode(response);
-    debugPrint(subCat.toString());
-    var list = subCat["items"] as List<dynamic>;
-
-    setState(() {
-      _mainCategories = list
-          .map((e) => SubCategories.fromJson(e))
-          .where((e) => e.parentCategoryId?.isEmpty ?? true)
-          .toList();
-    });
+  // List<SubCategories> _mainCategories = [];
+  // Future<void> readJsonFile() async {
+  //   debugPrint("!>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>!Reading json file");
+  //   final String response =
+  //       await rootBundle.loadString('assets/subcategories.json');
+  //   final subCat = await json.decode(response);
+  //   debugPrint(subCat.toString());
+  //   var list = subCat["items"] as List<dynamic>;
+  @override
+  void initState() {
+    super.initState();
+    final data = Provider.of<AllCategories>(context, listen: false);
+    data.loadCategories(context);
   }
+
+  //   setState(() {
+  //     _mainCategories = list
+  //         .map((e) => SubCategories.fromJson(e))
+  //         .where((e) => e.parentCategoryId?.isEmpty ?? true)
+  //         .toList();
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
-    if (_mainCategories.isEmpty) {
-      readJsonFile();
-    }
+    final data = Provider.of<AllCategories>(context);
     return Scaffold(
       appBar: AppBar(
         title: const Text("load json file"),
       ),
-      body:
-       SingleChildScrollView(
-         child: Column(
+      body: SingleChildScrollView(
+        child: Column(
           children: [
-            if (_mainCategories.isNotEmpty)
+            if (data.mainCategories.isNotEmpty)
               FutureBuilder(
                 builder: (context, snapshot) {
                   return GridView.builder(
-                    physics:const ScrollPhysics(),
+                    physics: const ScrollPhysics(),
                     shrinkWrap: true,
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,
-                        mainAxisSpacing: 20,
-                        crossAxisSpacing: 0),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 3,
+                            mainAxisSpacing: 20,
+                            crossAxisSpacing: 0),
                     itemBuilder: (context, index) => Padding(
                       padding: const EdgeInsets.only(top: 0),
                       child: SingleChildScrollView(
@@ -61,12 +67,16 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
                           onTap: () {
                             Navigator.of(context).pushNamed(
                                 SubCategoriesDetailScreen.routeName,
-                                arguments: _mainCategories[index].id);
+                                arguments:
+                                    data.mainCategories.elementAt(index).id);
                           },
                           child: (Column(
                             children: [
                               Image.network(
-                                _mainCategories[index].logo.toString(),
+                                data.mainCategories
+                                    .elementAt(index)
+                                    .logo
+                                    .toString(),
                                 errorBuilder: (ctx, o, n) {
                                   return Image.asset(
                                     "assets/images/load.png",
@@ -83,7 +93,7 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 4),
                                 child: Text(
-                                  _mainCategories[index].name,
+                                  data.mainCategories.elementAt(index).name,
                                   style: const TextStyle(
                                     fontSize: 10,
                                   ),
@@ -94,13 +104,14 @@ class _JsonSubCategoriesState extends State<JsonSubCategories> {
                         ),
                       ),
                     ),
-                    itemCount: _mainCategories.length,
+                    itemCount: data.mainCategories.length,
                   );
                 },
               ),
           ],
-         ),
-       ),
+        ),
+      ),
     );
   }
 }
+// }

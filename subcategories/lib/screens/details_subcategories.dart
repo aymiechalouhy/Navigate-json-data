@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
@@ -65,7 +63,7 @@ class _SubCategoriesDetailScreenState extends State<SubCategoriesDetailScreen> {
                                 padding: const EdgeInsets.only(top: 30),
                                 child: Text(                                                          
                                   _subCategories[index].name,
-                                  style: const TextStyle(fontSize: 8.2,
+                                  style: const TextStyle(fontSize:10,
                                   fontWeight: FontWeight.bold),
                                 ),
                               )

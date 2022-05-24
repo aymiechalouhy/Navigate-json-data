@@ -6,12 +6,9 @@ import 'package:subcategories/screens/details_subcategories.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(
-      //  MultiProvider( providers: [
-      //     ChangeNotifierProvider(create: (_) => SubCategories()),
-      //   ],
-      //   child:
-      MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (context) => AllCategories()),
+  ], child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
